@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-2.1.4.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.js" integrity="sha256-siFczlgw4jULnUICcdm9gjQPZkw/YPDqhQ9+nAOScE4=" crossorigin="anonymous"></script>
+  <title>Fx Arena</title>
+ 
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- navbar start -->
+  <div class="col-lg-12" style="background-image: url('images/Asset 7@2x (1).png'); margin: 0px; padding: 0px;">
+    <!--<div class="" style="background-image: url('images/Asset 8@2x.png'); border-bottom-right-radius: 40px; border-bottom-left-radius: 40px;">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-image: url('images/ Asset 8@2x.png');">
+  
+  <button class="c3 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item" style="padding-left: 80px; padding-top: 25px;">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item" style="padding-left: 80px; padding-top: 25px;">
+        <a class="nav-link" href="#">Business Plan</a>
+      </li>
+      
+      <li class="nav-item" style="padding-left: 80px; padding-top: 25px;">
+        <a class="nav-link" href="#">About us</a>
+      </li>
+      <li class="nav-item" style="padding-left: 150px; padding-top: 20px;s">
+        <a class="navbar-brand" href="#"><img src="images/Fx Arena logo.png" width="100px"></a>
+      </li>
+      <li class="nav-item" style="padding-left: 80px; padding-top: 25px;">
+        <a class="nav-link" href="#">Our Team</a>
+      </li>
+      <li class="nav-item" style="padding-left: 80px; padding-top: 25px;">
+        <a class="nav-link" href="#">News Center</a>
+      </li>
+      
+      <li class="nav-item" style="padding-left: 80px; padding-top: 25px;">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+
+    
+  </div>
+</nav>
+</div>-->
+<!-- navbar end -->
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; background-color: #B68A4B;">
+    	<!-- left side -->
+    	<div class="collapse navbar-collapse order-lg-1 order-3 navigation-menu">
+		    <ul class="navbar-nav mr-auto ni">
+		      <li class="nav-item">
+		        <a class="nav-link" href="#"> Home</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#"> Business Plan</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#"> About Us</a>
+		      </li>
+		    </ul>
+    	</div>
+  		<a class="navbar-brand order-1 mr-lg-0" href="#">
+  			<img src="images/FX Arena Logo.png" width="100px">
+  		</a>
+  		<button class="navbar-toggler order-2" type="button" data-toggle="collapse" data-target=".navigation-menu">
+    	<span class="navbar-toggler-icon"></span>
+  		</button>
+
+  		<!-- right side -->
+  		<div class="collapse navbar-collapse order-lg-3 order-4 navigation-menu">
+    		<ul class="navbar-nav ml-auto ni">
+      			<li class="nav-item">
+        			<a class="nav-link" href="#"> Our Team</a>
+      			</li>
+      			<li class="nav-item">
+       				 <a class="nav-link" href="#"> News Center</a>
+      			</li>
+      			<li class="nav-item">
+       				 <a class="nav-link" href="#"> Contact</a>
+      			</li>
+    		</ul>
+    
+  		</div>
+	</nav>
+   
+
+   <!-- feel the magic div -->
+   <div class="row container" style="margin-top: 100px; margin-bottom: 100px;">
+     <div class="col-lg-9" align="left" style="color: white; margin-bottom: 100px; padding-left: 80px;">
+       <h1 style="color: #E2CA74;">Feel The <br> Magic Of Trading</h1>
+       <p class="tx" style="font-size: 17px;">Welcome to FxArena. A team of<br>
+          experience investment managers<br>
+          and traders working dedicatedly<br>
+          in digital assets trading domain to<br>
+          increase the valuation of your<br>
+          money
+        </p>
+        <button class="btn" style="border-radius: 40px; background-color: #E2CA74; padding:1px 10px; font-size: 13px;">Live Account</button>
+        <button class="btn" style="border-radius: 40px; padding: 1px 10px; margin-left: 20px; font-size: 13px;">Demo Account</button>
+     </div>
+     <div class="col-lg-3" align="right" style="margin-bottom: 100px;">
+     	<img class="i1" src="images/Asset 1@2x.png" width="150%" style="z-index: 0; position: absolute;">
+       <img class="i2" src="images/Asset 2@2x.png" width="100%"  style="z-index: 9; margin: 90px 0px 0px 80px;">
+     </div>
+   </div>
+  </div>
+
+
+	<!-- 2nd div  --->
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 style="text-align: center; ">3 STEP ACCOUNT OPENING</h1>
+      <p style="text-align: center; font-size: 30px;">The most simplified trading account opening system in the market.</p>
+      <div class="row" style="margin: 50px 100px;">
+        <div class="col-lg-4">
+          <img class="imrot" src="images/Asset 21@2x.png" width="100%" style="z-index: 0; position: absolute;">
+          <img class="c2" src="images/Asset 17@2x.png" width="100px;" style="z-index: 1; position: absolute; margin-left: 280px; margin-top: 40px;">
+          <div class="c1" style="z-index: 2; text-align: center; padding: 100px 10px;">
+            <img src="images/Asset 14@2x.png" width="50px;"><br><br>
+            <p >Fill in our Registration form.<br>We’ve prepared only the<br>
+            main fields we need to<br>onboard you</p>
+          </div>
+          
+        </div>
+        <div class="col-lg-4">
+          <img class="imrot" src="images/Asset 21@2x.png" width="100%" style="z-index: 0; position: absolute;">
+          <img class="c2" src="images/Asset 19@2x.png" width="100px;" style="z-index: 1; position: absolute; margin-left: 280px; margin-top: 40px;">
+          <div class="c1" style="z-index: 2; text-align: center; padding: 100px 10px;">
+            <img src="images/Asset 15@2x.png" width="50px;"><br><br>
+            <p>Attach your documents and<br>we will review them<br>					instantly.</p>
+          </div>
+          
+        </div>
+        <div class="col-lg-4">
+          <img class="imrot1" src="images/Asset 20@2x.png" width="80%" style="z-index: 0; position: absolute;">
+          <img class="c2-1" src="images/Asset 18@2x.png" width="100px;" style="z-index: 1; position: absolute; margin-left: 270px; margin-top: 40px;">
+          <div class="c1-1" style="z-index: 2; text-align: center; padding: 100px 10px;">
+            <img src="images/Asset 16@2x.png" width="50px;"><br><br>
+            <p>Deposit and Trade! Straight<br>away after registration.</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container" style="margin-bottom: 80px;">
+		<div class="row about">
+			<div class="col-lg-6" style="padding-top: 150px;">
+				<h1 style="line-height: 50%;">About <span style="color: #F6CD2A;">Fx Arena</span><img src="images/border-bottom.png" width="80%"></h1>
+				<p style="font-size: 13px;">FxArena is a leading cryptocurrency and forex investment and trading company based out of UK. We specialize in short-medium term positions in large-cap cryptocurrencies and major forex markets. With over 20 years of experience in trading, our trading and investment specialists make sure that they put your money at the right place and at the right time. Our team of investment specialists and researchers have huge exposure to top financial and banking institutions, working constantly towards implementing most effective and advanced trading technology for our clients.</p>
+				<p style="font-size: 13px;">FxArena is a registered company under United Kingdom legislation with the company number #12753007. Our aim is to build partnerships and achieve goals by finding unique investment options worldwide.</p>
+			</div>
+			<div class="col-lg-6" style="text-align: center;">
+				<div style="width: 320px; height: 250px; background-color: #F6CD2A; text-align: center; margin-left: 100px;">
+					<img src="images/Group 6@2x.png" style="margin: 30px 0px; text-align: center;">
+				</div>
+					<iframe width="460" height="250" src="https://www.youtube.com/embed/R2K1z55Oj1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+</div>
+
+
+
+<div style="background-image: url('images/bg-whychoseus.PNG'); 
+            background-position: center;
+  			background-repeat: no-repeat;
+ 		    background-size: cover; background-image: url('images/Untitled-.3.png');">
+	<div class="row">
+		<div class="col-lg-10 mx-auto" style="margin-top: 100px;">
+			<h1 class="" style="line-height: 50%; text-align: center; color: white;">Why To <span style="color: #F6CD2A;">Choose Us</span> <br><img src="images/border-bottom.png" width="50%"></h1>
+			<div class="row" style="margin-top: 100px;">
+				<div class="col-lg-4" style="text-align: center;">
+					<div class="animated" style="background-color: white; margin-left: 135px; text-align: center; width: 100px; border-radius: 300px; padding: 20px;">
+						<img src="images/professionalism.png">
+					</div><br>
+					<h4 style="color: #F6CD2A; text-align: center;">Professionalism</h4>
+					<p style="color: white; text-align: center;">We are a very fast growing Commodity Trading and Forex Trading</p>
+				</div>
+				<div class="col-lg-4" style="text-align: center;">
+					<div class="animated" style="background-color: white; margin-left: 135px; text-align: center; width: 100px; border-radius: 300px; padding: 20px;">
+						<img src="images/innovation.png">
+					</div><br>
+					<h4 style="color: #F6CD2A; text-align: center;">Innovations</h4>
+					<p style="color: white; text-align: center;">With the help of bots, we develop new technologies in trading and cryptocurrency markets.</p>
+				</div>
+				<div class="col-lg-4" style="text-align: center;">
+					<div class="animated" style="background-color: white; margin-left: 135px; text-align: center; width: 100px; border-radius: 300px; padding: 20px;">
+						<img src="images/profits.png">
+					</div><br>
+					<h4 style="color: #F6CD2A; text-align: center;">Profitability</h4>
+					<p style="color: white; text-align: center;">Trading bots have established themselves as a highly profitable investment tool.</p>
+				</div>
+			</div>
+			<div class="row" style="margin-bottom: 150px;">
+				<div class="col-lg-4 mx-auto" style="text-align: center;">
+					<div class="animated" style="background-color: white; margin-left: 135px; text-align: center; width: 100px; border-radius: 300px; padding: 20px;">
+						<img src="images/secure-payment@2x.png">
+					</div><br>
+					<h4 style="color: #F6CD2A; text-align: center;">Warranties</h4>
+					<p style="color: white; text-align: center;">We confirm legal guarantees of open deposits.</p>
+				</div>
+				<div class="col-lg-4" style="text-align: center;">
+					<div class="animated" style="background-color: white; margin-left: 135px; text-align: center; width: 100px; border-radius: 300px; padding: 20px;">
+						<img src="images/24-hours-delivery.png">
+					</div><br>
+					<h4 style="color: #F6CD2A; text-align: center;">Profitability</h4>
+					<p style="color: white; text-align: center;">Trading bots have established themselves as a highly profitable investment tool.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="row my-5 py-5" style="background-color: #000000; color: white; padding-top: 100px;">
+	<div class="col-lg-10 mx-auto py-5">
+		<div class="row py-5 price">
+			<div class="col-lg-3">
+				<h5>Bitcoin Price Chart <img src="images/border-bottom.png" width="70%"></h5><br>
+				<p><img class="animated" src="images/bitcoin.png" width="70" style="float: left;"> 
+					<span class="p-1" style="font-size: 18px; padding-left: 10px;">BTCUSD</span> <br> 
+					<span class="p-1" style="font-size: 13px; padding-left: 10px;">BitCoin / Us Dollar</span> <br> <span class="p-1" style="padding-left: 10px; color: #FBBD19;">$ 45437</span></p>
+
+			</div>
+			<div class="col-lg-3">
+				<h5>Ethereum Price Chart <img src="images/border-bottom.png" width="70%"></h5><br>
+				<p><img class="animated" src="images/ethereum-gold-coin.png" width="70" style="float: left;"> 
+					<span class="p-1" style="font-size: 18px; padding-left: 10px;">ETHUSD </span> <br> 
+					<span class="p-1" style="font-size: 13px; padding-left: 10px;">ETH/US Dollar</span> <br> <span class="p-1" style="padding-left: 10px; color: #FBBD19;">$ 3543.43</span></p>
+			</div>
+			<div class="col-lg-3">
+				<h5>Pound Sterling Price Chart <img src="images/border-bottom.png" width="90%"></h5><br>
+				<p><img class="animated" src="images/pound-icon.png" width="70" style="float: left;"> 
+					<span class="p-1" style="font-size: 18px; padding-left: 10px;">GBPUSD </span> <br> 
+					<span class="p-1" style="font-size: 13px; padding-left: 10px;">Pound sterling/US Dollar</span> <br> <span class="p-1" style="padding-left: 10px; color: #FBBD19;">$ 1.4098</span></p>
+			</div>
+			<div class="col-lg-3">
+				<h5>Euro Price Chart <img src="images/border-bottom.png" width="70%"></h5><br>
+				<p><img class="animated" src="images/gold-animation-icon.png" width="70" style="float: left;"> 
+					<span class="p-1" style="font-size: 18px; padding-left: 10px;">EURUSD </span> <br> 
+					<span class="p-1" style="font-size: 13px; padding-left: 10px;">Euro/US Dollar</span> <br> <span class="p-1" style="padding-left: 10px; color: #FBBD19;">$ 1.2143</span></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div>
+	<h1 style="text-align: center; line-height: 80%;">Awards <br> <img src="images/border-bottom.png" width="20%"></h1>
+	<div class="row my-5">
+		<div class="col-lg-10 mx-auto">
+			<div class="row" style="text-align: center;">
+				<div class="col-lg-2">
+					<img src="images/award1.jpeg">
+				</div>
+				<div class="col-lg-2" style="margin-left: 30px;">
+					<img src="images/award2.jpeg">
+				</div>
+				<div class="col-lg-2" style="margin-left: 30px;">
+					<img src="images/award3.jpeg">
+				</div>
+				<div class="col-lg-2" style="margin-left: 30px;">
+					<img src="images/award4.jpeg">
+				</div>
+				<div class="col-lg-2" style="margin-left: 30px;">
+					<img src="images/award5.jpeg">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+ <!-- 3rd div -->
+  <div style="margin-top: 200px; background-color: #EBECEC; border-radius: 40px;">
+    <p class="txt" style="text-align: center; font-size: 20px;"><span style="padding:7px 70px; ; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; background-color: #252D31; color: white;">Everything in One Account</span></p>
+    <div class="row" style="margin-top: 100px;">
+      <div class="col-lg-6" style="padding-left: 100px;">
+        <h2>TRADE SMART ON TOP-NOTCH<br>PLATFORMS - MT5</h2>
+        <p>21 Timeframes, 6 types of pending orders,<br>
+          Hedging and Netting allowed and many<br>more.</p>
+        <button class="btn" style="border-radius: 40px; background-color: #E2CA74; padding:1px 16px; font-size: 13px;">Read More</button>
+        <button class="btn" style="border-radius: 40px; background-color: black; padding: 1px 16px; margin-left: 20px; color: white; font-size: 13px;">Download MT5</button>
+        <br><br><br><br><br><br>
+        <p style="font-size: 11px;">AVAILABLE ON: <img src="images/Asset 4@2x.png" width="30px;" style="margin-left: 20px;">
+          <img src="images/Asset 5@2x.png" width="30px;" style="margin-left: 20px;">
+          <img src="images/Asset 6@2x.png" width="30px;" style="margin-left: 20px;"></p>
+      </div>
+      <div class="col-lg-6" style="padding-left: 100px;">
+        <img src="images/laptop.png" width="70%">
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div style="margin-top: 100px;">
+	<h1 style="text-align: center; line-height: 70%;">Our <span style="color: #F6CD2A;">Team</span> <br><img src="images/border-bottom.png" width="20%"></h1>
+	<div class="row" style="margin-top: 200px;">
+		<div class="col-lg-10 mx-auto">
+			<div class="row" style="text-align: center;">
+				<div class="col-lg-3">
+					<div class="card my-4" style="width: 100%; background-color: #F2F2F2;">
+						  <img class="card-img-top" style="border-radius: 200px; margin-top: -120px; padding: 10px;" src="images/team1.png" alt="Card image cap">
+						  <div class="card-body">
+						    <h2 class="card-title">Williams George</h2>
+						    <p class="card-text">CEO</p>
+						    <a href="#" class="btn">
+						    	<i class="fab fa-facebook-f"></i> </a>
+						    	<a href="#" class="btn"><i class="fab fa-twitter"></i> </a>
+						    	<a href="#" class="btn"><i class="fab fa-google"></i> </a>
+						    	<a href="#" class="btn"><i class="fab fa-youtube"></i>
+						    </a>
+						  </div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="card my-4" style="width: 100%; background-color: #F2F2F2;">
+						  <img class="card-img-top" style="border-radius: 200px; margin-top: -120px; padding: 10px;" src="images/team2.png" alt="Card image cap">
+						  <div class="card-body">
+						    <h2 class="card-title">Kim Schutzhofer</h2>
+						    <p class="card-text">Marketing Head</p>
+						    <a href="#" class="btn">
+						    	<i class="fab fa-facebook-f"></i> </a>
+						    	<a href="#" class="btn"><i class="fab fa-twitter"></i> </a>
+						    	<a href="#" class="btn"><i class="fab fa-google"></i> </a>
+						    	<a href="#" class="btn"><i class="fab fa-youtube"></i>
+						    </a>
+						  </div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="card my-4" style="width: 100%; background-color: #F2F2F2;">
+						  <img class="card-img-top" style="border-radius: 200px; margin-top: -120px; padding: 10px;" src="images/team3.png" alt="Card image cap">
+						  <div class="card-body">
+						    <h2 class="card-title">Peter Pan</h2>
+						    <p class="card-text">Market Analyst</p>
+						    <a href="#" class="btn">
+						    	<i class="fab fa-facebook-f"></i> </a>
+						    	<a href="#" class="btn"><i class="fab fa-twitter"></i> </a>
+						    	<a href="#" class="btn"><i class="fab fa-google"></i> </a>
+						    	<a href="#" class="btn"><i class="fab fa-youtube"></i>
+						    </a>
+						  </div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="card my-4" style="width: 100%; background-color: #F2F2F2;">
+						  <img class="card-img-top" style="border-radius: 200px; margin-top: -120px; padding: 10px;" src="images/team4.png" alt="Card image cap">
+						  <div class="card-body">
+						    <h2 class="card-title">Roman Nemish</h2>
+						    <p class="card-text">Enginerring & Production Advisor</p>
+						    <a href="#" class="btn">
+						    	<i class="fab fa-facebook-f"></i> </a>
+						    	<a href="#" class="btn"><i class="fab fa-twitter"></i> </a>
+						    	<a href="#" class="btn"><i class="fab fa-google"></i> </a>
+						    	<a href="#" class="btn"><i class="fab fa-youtube"></i>
+						    </a>
+						  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--<div style="background-color: #000000; width: 100%; height: 400px;"></div>-->
+</div>
+
+
+
+<div style="margin-top: 100px;">
+	<h1 class="" style="line-height: 50%; text-align: center;">News Center <span style="color: #F6CD2A;"> & Events</span><br><img src="images/border-bottom.png" width="50%"></h1>
+	<div class="row my-5">
+		<div class="col-lg-10 mx-auto">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="card my-4" style="width: 100%;">
+						<img class="card-img-top" src="images/media1.png" alt="Card image cap">
+						<div class="card-body">
+						   <h5 class="card-title">Joe Biden Freezes FinCEN's Crypto Wallet Rulemaking — US Crypto Regulations Under Review</h5>
+						   <p class="card-text">Joe Biden, the 46th president of the United States, has frozen all rulemaking carried...</p>
+						</div>
+			        </div>
+				</div>
+				<div class="col-lg-4">
+					<div class="card my-4" style="width: 100%;">
+						<img class="card-img-top" src="images/media2.png" alt="Card image cap">
+						<div class="card-body">
+						   <h5 class="card-title">Hive Blockchain Buys 6,400 Bitcoin Miners From Canaan, Capacity Reaches 1,229 PH/s</h5>
+						   <p class="card-text">Canadian bitcoin miner Hive Blockchain has bought 6,400 next generation mining...</p>
+						</div>
+			        </div>
+				</div>
+				<div class="col-lg-4">
+					<div class="card my-4" style="width: 100%;">
+						<img class="card-img-top" src="images/media3.png" alt="Card image cap">
+						<div class="card-body">
+						   <h5 class="card-title">Ethereum Could Touch $10,500 After Crypto Rises to Record High: Fundstrat Global</h5>
+						   <p class="card-text">Fundstrat Global Advisors strategist David Grider predicts that the price of...</p>
+						</div>
+			        </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+ 
+  <!-- final div -->
+  <div style="margin-top: 20px; background-image: url('images/Asset 11@2x.png');">
+    
+    <h2 style="text-align: center; padding-top: 200px; color: white;">Contact Us</h2>
+    <p style="text-align: center; color: white;">Our team works for you, so you can contact us in any way convenient for you.<br>
+      We will be happy to answer all your questions!</p>
+
+    <div class="row" style="margin-top: 50px; text-align: center;">
+      <div class="col-lg-3">
+        <img src="images/FX Arena Logo.png" width="200px;">
+      </div><br>
+      <div class="col-lg-3">
+        <img src="images/app.png" width="200px;"><br>
+        <img src="images/googlepay.png" width="200px;">
+      </div><br>
+      <div class="col-lg-3" style="color: white;">
+        <p><i class="fas fa-map-marker-alt" style="color: #E2CA74;"></i> 6 Holywell Lan, London, En-<br>gland, EC2A 3ET</p>
+        <p><span style="color: #E2CA74;">Coming Soon</span> <br>Business Bay, Dubai, PO,<br>Box:242444</p>
+        <p><i class="far fa-envelope" style="color: #E2CA74;"></i> info@fxarena.co<br>support@fxarena.co</p>
+      </div><br>
+      <div class="foo col-lg-3">  
+        <h3 style="color: white;">Get In Touch</h3>
+        <form style="padding: 0% 20% 0% 20%;">
+          	<div class="form-group">
+        		<input type="text" width="50%" class="form-control" name="name" placeholder="Your Name" style="border-radius: 50px; border: none; padding: 8px 16px; outline: none;">
+          	</div>
+        	<div class="form-group">
+        		<input type="email" class="form-control" name="email" placeholder="Email" style="border-radius: 50px; border: none; padding: 8px 16px; outline: none;">
+        	</div>
+        	<div class="form-group">
+        		<textarea class="form-control" placeholder="Message" style="border-radius: 30px; border: none; padding: 8px 16px; outline: none;"></textarea>
+        	</div>
+        	<div class="form-group">
+            	<input style="outline: none; background-color: #E2CA74; outline: none; border-radius: 40px;" type="submit" name="submit" class="btnSubmit btn-block" value="Let's connect" />
+        	</div>
+      	</form>
+      </div>
+    </div>
+</div>
+</body>
+  
+  
+</html>
